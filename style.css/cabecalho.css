@@ -63,16 +63,19 @@
     .icones__cabecalho-mobile{
         display: flex;
         flex-direction: row;
+        padding-right: 4rem;
     }
+    
     
     
     .cabecalho-link-mobile{
         display: flex;
+       
     }
     
     .link-mobile{
         width: 20px;
-        margin-left: 0.5rem;
+        margin-left: 0.3rem;
     }
 
 }
