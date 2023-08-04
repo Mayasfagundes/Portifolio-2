@@ -42,20 +42,20 @@ h1{
 }
 
 [data-anime] {
-    opacity: 0; 
-    transition: .3s;    
-    
-  }
+  opacity: 0;
+  transform: translate(0, 50px); /* Mover a animação para cima em vez de para a direita ou esquerda */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Melhorar as transições com a função "ease" */
+}
 
 [data-anime="right"] {
-    transform: translate(50px, 0, 0);
-  }
+  transform: translate(50px, 0); /* Manter a mesma movimentação para a direita */
+}
 
-  [data-anime="left"] {
-    transform: translate(-50px, 0, 0);
-  }
+[data-anime="left"] {
+  transform: translate(-50px, 0); /* Manter a mesma movimentação para a esquerda */
+}
 
 [data-anime].animate {
-    opacity: 1;
-    transform: translate(0px, 0px, 0px);
-  }
+  opacity: 1;
+  transform: translate(0, 0); /* Redefinir a posição para 0 */
+}

@@ -41,6 +41,11 @@
 
 .icon{
   width: 60px;
+
+}
+
+.icon:hover{
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 450px) {
@@ -55,10 +60,11 @@
   }
 
   .contato__botoes{
-    display: flex;
-    flex-direction: row;
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
-    margin: 5rem;
+    align-items: center;
   }
   
 }
